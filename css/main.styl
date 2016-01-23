@@ -1,0 +1,510 @@
+@import "bootstrap.min.css"
+@import "bootstrap-theme.min.css"
+@import "animate.min.css"
+@import "animate.min.css"
+@import "font-awesome/css/font-awesome.min.css"
+@import "nib/vendor"
+@import 'nib/normalize'
+
+vendor-prefixes = o ms moz webkit
+
+body
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align center
+footer
+	color white
+	background-color #313131
+#imagPrincipal img
+	position  relative
+	width  100%
+	height  622px
+#header
+	.top
+		margin-top 10px
+	position absolute
+	text-align center
+	width  100%
+	top  0px
+	#blockLanding
+		padding-top  130px
+	#mynameTitle
+		color  white
+		line-height  .9em
+		margin  0px
+		position  relative
+		font-size 60px
+		a
+			color white
+			&:hover
+				text-decoration none
+				color white
+	// .myCopys
+	// 	color  white
+	// 	line-height  .9em
+	// 	margin  0px
+	// 	padding  0px
+	// 	position  relative
+	// 	margin-top  22px
+	// #content
+	// 	position  relative
+	// 	color white
+	// #imgDevices
+	// 	position  relative
+	// 	width  60px//para pantalla chica
+	// 	height 60px
+	// 	background url('tutorial_sprite.gif') 0 0
+	#search
+		border-radius 9px
+		width 41%
+		margin-top 26px
+		height 45px
+	#anunciar,#vende,#gana
+		width 110px
+	#down
+		width 200px
+		height 80px
+	#btnMoree
+		position  relative
+		border-radius  0px
+		background  rgba(255,255,255,0.5)
+		border-style  none
+		&:hover{background-color:  rgba(4, 4, 4, 0.5);}
+.buscar
+	border-radius 6px
+	background-color red
+	border 0px
+	height 45px
+	color white
+/*media Query principal airbnb*/
+@media screen and (max-width  480px)
+	#imgDevices
+		display none
+@media screen and (max-width  640px)
+	#mynameTitle
+		font-size  40px//pantalla chica
+	.myCopys
+		font-size  14px//para pantalla chica
+	#content
+		font-size  15px//para pantalla chica
+@media screen and (min-width  1024px)
+	#mynameTitle
+		font-size  70px//pantalla grande
+	.myCopys
+		font-size  24px//para pantalla grande
+	#content
+		font-size  25px//para pantalla grande
+/*<<<<<<<<<<<<<<<<<<<<<<<<menu>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#menu
+	// position fixed
+	width 100%
+	height 32px
+	text-align center
+	// top  10px
+	// background  rgba(255,255,255,0.5)
+	z-index  1
+	a
+		color white
+		text-decoration none
+		cursor pointer
+		&:hover
+			color gray
+			cursor pointer
+	.menu
+		display inline-block
+		vertical-align top
+		margin-top  15px
+		float right
+		margin-right  3%
+		&:hover
+			cursor pointer
+	.border
+		border 1px solid white
+		padding 7px
+		margin-top 8px
+	#brand
+		float  left
+		margin-left  20px
+		margin-top 20px
+	.brand
+		width 255px
+		height 52px
+/*<<<<<<<<<<<<<<<<<<<<<<<<end menu>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<aboutme>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#categoria
+	text-align center
+	height 340px
+	background-color white
+	h2
+		padding-top 40px
+		margin-bottom 10px
+		margin-top 0px
+		font-size 32px
+		color #565a5c
+	p
+		color #565a5c
+	.ancho
+		width 100%
+		max-width 100%
+		color silver
+	.anchura
+		width 103px
+	.categoria
+		text-decoration none
+		color silver
+		&:hover
+			color black
+	// #yo
+	// 	top -89px
+	// 	float right
+	// 	text-align right
+	// .yo
+	// 	height 365px
+	// 	width 45%
+	// .block
+	// 	display inline-block
+	// 	position relative
+	// #yophoto
+	// 	font-family 'Shadows Into Light', cursive
+	// 	font-size 27px
+	// 	position absolute
+	// 	float right
+	// 	right 174px
+	// 	margin-top 100px
+	// 	width 300px
+	// 	p
+	// 		font-size 16px
+/*<<<<<<<<<<<<<<<<<<<<<<<<end aboutme>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.hsContainer {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 622px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+}
+.hsContent {
+    max-width: 450px;
+    margin: -150px auto 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ebebeb;
+    padding: 0 8%;
+    text-align: center
+}
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('https://raw.githubusercontent.com/soru13/Eduardo/gh-pages/img/frontend_cover.jpg')}
+/*<<<<<<<<<<<<<<<<<<<<<<<imgFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#imgFrontend
+	display block
+	max-width 100% !important
+	height 905px
+	padding 0px
+	.u-wrapper
+		width 1045px
+		margin 0px auto
+	h2
+		padding-top 40px
+		margin-bottom 10px
+		margin-top 0px
+		font-size 32px
+	.landdingBanner
+		width 100%
+		text-align center
+		position relative
+		float left
+		margin 12px
+		padding 15px
+		background-color #C0C0C0
+	.overflow
+		overflow hidden
+		width 100%
+		position relative
+		float left
+		border-radius 6px
+		color white
+		text-align left
+		img
+			width 30%
+			height 100px
+			transition 1.5s ease
+			&:hover
+				transform scale(2)
+	#RentarItem
+		width 100%
+		position absolute
+		top 43px
+		text-align right
+		padding-left 13px
+		z-index 1
+		a
+			color white
+			text-decoration none
+	// .top
+	// 	position relative
+	// 	float left
+	// 	text-align left
+	// 	h4
+	// 		margin 0px
+	a
+		text-decoration none
+		&:hover
+			color black
+	// background-image url('https://raw.githubusercontent.com/soru13/Eduardo/gh-pages/img/backend_cover.jpg')
+/*media Query principal airbnb*/
+@media screen and (max-width  1023px)
+	.yo
+		display none
+	#yophoto
+		display none
+	.landingBanner-right
+		padding-left  168px
+@media screen and (max-width  640px)
+	.landingBanner-right
+		float  left
+		width  480px
+		padding-left  35px
+@media screen and (max-width  480px)
+	.landingBanner-right
+		width  300px
+	.LandingBanner-left
+		width  100px
+	.LandingBadge-item
+		width  100px
+		height  100px
+		h1
+			margin-bottom  27px
+	.block
+		width  100%
+@media screen and (min-width  320px)
+	body
+		font-size 16px
+	#menu
+		height  62px
+	.landingBanner-right
+		width  215px
+		padding-left  6px
+		h1
+			margin-bottom  14px
+	.LandingBanner-left
+		width  80px
+	.LandingBadge-item
+		width  80px
+		height  80px
+	.block
+		width  100%
+@media screen and (min-width  640px)
+	#menu
+		height  32px
+	.landingBanner-right
+		float  left
+		width  480px
+		padding-left  35px
+	.LandingBanner-left
+		width 146px
+@media screen and (min-width  1024px)
+	body
+		font-size 16px
+	.landingBanner-right
+		float right
+		width  600px
+		padding-left  57px
+	.block
+		width 30%
+	.LandingBadge-item
+		width  146px
+		height  146px
+/*<<<<<<<<<<<<<<<<<<<<<<<end imgFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<myKnowledgeFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.LandingSummary-container
+	box-sizing  border-box
+	margin  0 auto
+	max-width  1000px
+	padding  0 15px
+	position  relative
+	color white
+	.LandingSkills
+		padding  43px 0 0 0
+		.LandingSkills-item
+			display  inline-block
+			margin-bottom  20px
+			width  216px
+			vertical-align  top
+			h4
+				margin-top 0px
+			p
+				text-align left
+			.LandingSkills-image
+				// margin-bottom  5px
+	.LandingSummary-list
+		column-count  3
+		flex-flow  wrap
+		justify-content  space-between
+		overflow  hidden
+		padding  0
+		.LandingSummary-item
+			list-style  none
+			text-align  left
+			padding  5px
+			box-sizing  border-box
+			position  relative
+			& before
+				content '.'
+				position  absolute
+				left  0
+				top  0
+				font-weight  bold
+/*<<<<<<<<<<<<<<<<<<<<<<<end myKnowledgeFrontend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<imgBackend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#imgBackend
+	display block
+	width 100%
+	height 546px
+	color white
+	background-color #313131
+	padding-top  152px
+/*<<<<<<<<<<<<<<<<<<<<<<<end imgBackend>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<imgStrategy>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#imgStrategy
+	display block
+	width 100%
+	height 546px
+	color white
+	background-repeat  no-repeat
+	background-position  center
+	background-image url('https://static.platzi.com/media/courses/marketing_cover.jpg')
+	padding-top  152px
+@media screen and (max-width  1023px)
+	#imgStrategy
+		padding-top  100px
+/*<<<<<<<<<<<<<<<<<<<<<<<end imgStrategy>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<imgIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#imgIOS
+	display block
+	width 100%
+	height 546px
+	color white
+	background-color #313131
+	padding-top  152px
+/*<<<<<<<<<<<<<<<<<<<<<<<end imgIOS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<Contact>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#Contact
+	padding-top 20px
+	a
+		color red
+		text-decoration none
+		cursor pointer
+		&:hover
+			color gray
+			cursor pointer
+// .Contact-title
+// 	font-weight  bold
+// 	font-size  52px
+// 	margin 0px
+// .Contact-text
+// 	max-width  835px
+// 	margin  30px auto 0 auto
+// 	font-size  21px
+.Contact-medias
+	margin  40px 0 0
+	padding  0
+	display  block
+	list-style-type  disc
+.Contact-media
+	display  inline-block
+	text-align  center
+	margin-bottom  40px
+	vertical-align  top
+	margin  0
+	width 19%
+.Contact-mediaName
+	text-align  center
+	font-size  18px
+	margin  0 0 20px
+@media screen and (max-width  1200px)
+	.Contact-media
+		width 100%
+/*<<<<<<<<<<<<<<<<<<<<<<<end Contact>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<growht myKnowledgeStrategy>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.tools
+	flex-flow  wrap
+	justify-content  space-between
+	overflow  hidden
+	padding  0
+	text-align  left
+	center
+		color  purple
+	li
+		margin-bottom  1%
+	img,svg
+		width 200px
+		height 41px
+		display inline-block
+	p
+		display inline-block
+		margin-left 1%
+/*<<<<<<<<<<<<<<<<<<<<<<<end growht myKnowledgeStrategy>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<Trust-list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.Trust-list
+	margin 0
+	padding 0
+	text-align center
+	.Trust-company
+		display inline-block
+		margin 15px 25px
+		-webkit-filter grayscale(100%)
+		&:hover
+			-webkit-filter none
+			-webkit-filter grayscale(0)
+	.sprite-nueva
+		width 100px
+		height 90px
+	.sprite-hcc
+		width 144px
+		height 75px
+	.sprite-coppel
+		width 125px
+		height 65px
+	.sprite-credilikeme
+		width 125px
+		height 60px
+	.sprite-uas
+		width 125px
+		height 125px
+/*<<<<<<<<<<<<<<<<<<<<<<<<end Trust-list>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+// .texleft
+// 	text-align left
+.semi-transparent
+	background  rgba(255,255,255,0.5)
+.sinborder
+	border-radius 0px
+.sinmargin-ni-Padding
+	margin 0px
+.conmargin
+	margin-bottom 48px
+// .up
+// 	margin-left 5px
+// 	&:hover{color: gray;}
+.white
+	color white
+.redondeo
+	border-radius 50%
+	position relative
+	top  -2px
+	width 16px
+	height 16px
+.CourseList-courseLevel
+	background-image url('https://raw.githubusercontent.com/soru13/Eduardo/gh-pages/img/sprite.952c58080534.png')
+	backround-position  0 -26.5px
+	width  38.5px
+	height  21.5px
+	margin  0px auto
+.colordark{background-color:darkslategray;}
